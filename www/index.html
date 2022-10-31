@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <meta name="color-scheme" content="light dark">
+        <link rel="stylesheet" href="css/index.css">
+        <title>Gestion des taches</title>
+        <script src="libjq/jquery.min.js"></script>
+        <script src="libjq/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="libjq/jquery.mobile-1.4.5.min.css">
+        
+    </head>
+
+    
+    <body>
+        
+        <div data-role="page" id="FondEcran">
+            <div data-role="header" id="ACC" data-theme="b">
+                <h1>Gestion des Taches</h1>
+                <a data-role="button" id="InialiserTacheBis" class="ui-btn-right" style="color:#ddff00;">Actualiser</a>
+            </div>
+
+            <div data-role="navbar">
+                <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="index.html">Urgences</a></li>
+                  <li><a href="index.html">Rechercher</a></li> <!--Ce lien vers le chemin d'accès index.html n'est que provisoire-->
+                </ul>
+              </div>
+
+            <div role="main" class="ui-content">
+                <input type="text" id="Tache"/>
+                <input type="button" id="AjoutTache" value="Ajouter"/>
+                <input type="button" id="InialiserTache" value="Réinitialiser"/>
+                <ul id="Tasklist" data-role="listview"  data-inset="true">
+                </ul>
+                
+            </div>
+            <hr style="background-color:rgba(135, 6, 28, 0.5);" noshade width="300" size="4">
+            <!-- C'est ici que je gère le pieds de page-->
+            <div data-role="footer">
+                <h1 style="background-color:hwb(104 28% 0% / 0.5);">&copy; <i>Youssou Ndione MIABD  Oct 2022</i></h1>
+
+            </div>
+        </div>
+    </body>
+</html>

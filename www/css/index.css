@@ -1,0 +1,7 @@
+#FondEcran 
+{
+    border: 1px solid rgb(201, 191, 191);
+    background-size:contain;
+    background: url(img/ac.jpg);
+    background-repeat: no-repeat;
+}
